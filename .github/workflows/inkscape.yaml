@@ -42,8 +42,10 @@ jobs:
             inkscape "$file" -o "${output_svg_dir}/${basename}.svg" --export-type="svg"
           done
 
-      - name: Upload Exported Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: exported-pngs
-          path: output/
+      - name: Commit and Push PNGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ./output/**/*
+          git diff --cached --quiet || git commit -m "chore: export SVGs to PNG"
+          git push
