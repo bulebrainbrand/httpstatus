@@ -1,0 +1,49 @@
+name: Export Vector Graphics
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  convert-assets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install Inkscape
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y inkscape
+
+      - name: Verify Inkscape Installation
+        run: inkscape --version
+
+      - name: Export SVG to PNG
+        run: |
+          output_png_dir="./output/png"
+          output_svg_dir="./output/svg"
+          mkdir -p "$output_png_dir"
+          mkdir -p "$output_svg_dir"
+
+          changed_svgs=$(git diff --name-only HEAD~1 HEAD --diff-filter=ACM | grep "^src/.*\.svg$" || true)
+
+          if [ -z "$changed_svgs" ]; then
+            exit 0
+          fi
+
+          echo "$changed_svgs" | while read -r file; do
+            basename=$(basename "$file" .svg)
+            inkscape "$file" -w 1600 -o "${output_png_dir}/${basename}.png" --export-type="png"
+            inkscape "$file" -o "${output_svg_dir}/${basename}.svg" --export-type="svg"
+          done
+
+      - name: Upload Exported Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-pngs
+          path: output/
