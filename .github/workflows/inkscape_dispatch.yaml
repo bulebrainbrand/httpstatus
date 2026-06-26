@@ -1,0 +1,45 @@
+name: Dispatch:Export Vector Graphics
+
+on:
+  workflow_dispatch:
+
+jobs:
+  convert-assets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Inkscape
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y inkscape
+
+      - name: Verify Inkscape Installation
+        run: inkscape --version
+
+      - name: Export SVG to PNG
+        run: |
+          output_png_dir="./output/png"
+          output_svg_dir="./output/svg"
+          mkdir -p "$output_png_dir"
+          mkdir -p "$output_svg_dir"
+
+
+
+          find ./src -name "*.svg" | while read -r file; do
+            basename=$(basename "$file" .svg)
+            inkscape "$file" -w 1600 -o "${output_png_dir}/${basename}.png" --export-type="png"
+            inkscape "$file" -o "${output_svg_dir}/${basename}.svg" --export-type="svg"
+          done
+
+      - name: Commit and Push PNGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "chore: export SVGs to PNG"
+          git push

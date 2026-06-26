@@ -3,7 +3,6 @@ name: Export Vector Graphics
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   convert-assets:
