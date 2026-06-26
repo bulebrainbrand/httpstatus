@@ -7,36 +7,11 @@
    viewBox="0 0 512 512"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-   sodipodi:docname="204.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="0.25"
-     inkscape:cx="204"
-     inkscape:cy="1062"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
   <defs
      id="defs1" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1">
     <circle
        style="fill:#000000;stroke:#000000;stroke-width:0.101"
@@ -47,7 +22,6 @@
     <path
        id="path2"
        style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 201.4116,315.29081 C 187.59283,302.02826 147.46955,261.91644 128.41602,242.86133 117.75,253.52734 107.08398,264.19336 96.417969,274.85938 L 201.10156,379.54102 415.58203,165.06055 C 404.71875,154.19727 393.85547,143.33398 382.99219,132.4707 323.27604,192.78711 261.12775,254.97441 201.4116,315.29081 Z"
-       sodipodi:nodetypes="ccccccc" />
+       d="M 201.4116,315.29081 C 187.59283,302.02826 147.46955,261.91644 128.41602,242.86133 117.75,253.52734 107.08398,264.19336 96.417969,274.85938 L 201.10156,379.54102 415.58203,165.06055 C 404.71875,154.19727 393.85547,143.33398 382.99219,132.4707 323.27604,192.78711 261.12775,254.97441 201.4116,315.29081 Z" />
   </g>
 </svg>
