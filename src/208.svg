@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.1767767"
-     inkscape:cx="797.61645"
-     inkscape:cy="1190.7678"
+     inkscape:zoom="0.3535534"
+     inkscape:cx="540.22957"
+     inkscape:cy="773.5748"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -52,70 +52,6 @@
          values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
          in="fbSourceGraphic" />
     </filter>
-    <mask
-       maskUnits="userSpaceOnUse"
-       id="mask15">
-      <g
-         id="g22"
-         transform="matrix(0.70710679,0.70710679,-0.93186152,0.93186152,-0.64814892,335.93958)">
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect15"
-           width="32.927601"
-           height="208.41194"
-           x="-479.69534"
-           y="-71.103462" />
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect16"
-           width="32.927601"
-           height="208.41194"
-           x="-431.08923"
-           y="-71.103462" />
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect17"
-           width="32.927601"
-           height="208.41194"
-           x="-382.48312"
-           y="-71.103462" />
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect18"
-           width="32.927601"
-           height="208.41194"
-           x="-331.72284"
-           y="-71.103462" />
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect19"
-           width="32.927601"
-           height="208.41194"
-           x="-280.96255"
-           y="-71.103462" />
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect20"
-           width="32.927601"
-           height="208.41194"
-           x="-232.35645"
-           y="-71.103462" />
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect21"
-           width="32.927601"
-           height="208.41194"
-           x="-183.75034"
-           y="-71.103462" />
-        <rect
-           style="fill:#ffffff;stroke-width:5.842;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-           id="rect22"
-           width="32.927601"
-           height="208.41194"
-           x="-132.99005"
-           y="-71.103462" />
-      </g>
-    </mask>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -151,28 +87,10 @@
            transform="rotate(45)" />
       </g>
     </g>
-    <g
-       id="g6"
-       mask="url(#mask15)"
-       transform="matrix(0.72825204,0,0,0.72825204,331.58238,7.2470503)">
-      <rect
-         style="fill:#ffffff;stroke-width:4.99999;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-         id="rect3"
-         width="75.593468"
-         height="75.593468"
-         x="-312.0639"
-         y="127.95899" />
-      <path
-         style="fill:#ffffff;stroke-width:6.16057;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-         d="m -242.45727,202.80169 94.28787,62.10862 V 66.601146 l -94.28787,62.108634 z"
-         id="path3" />
-      <rect
-         style="fill:#ffffff;stroke-width:6.16785;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
-         id="rect4"
-         width="25.444057"
-         height="77.43663"
-         x="-286.61984"
-         y="187.47368" />
-    </g>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 103.01949,200.16852 V 155.48454 H 84.489802 V 100.43345 L 155.93842,99.921877 223.67771,55.74947 v 144.41905 l -68.53304,-44.70156 -13.76409,0.0176 v 44.68398 z"
+       id="path2"
+       sodipodi:nodetypes="ccccccccccc" />
   </g>
 </svg>
