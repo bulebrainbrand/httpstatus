@@ -33,7 +33,7 @@ jobs:
           find ./src -name "*.svg" | while read -r file; do
             basename=$(basename "$file" .svg)
             inkscape "$file" -w 1600 -o "${output_png_dir}/${basename}.png" --export-type="png"
-            inkscape "$file" -o "${output_svg_dir}/${basename}.svg" --export-type="svg"
+            inkscape "$file" -o "${output_svg_dir}/${basename}.svg" --export-type="svg" --export-plain-svg
           done
 
       - name: Commit and Push PNGs
